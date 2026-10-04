@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #111111, #4b0082);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #4b0082;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+textarea {
+    width: 100%;
+    height: 160px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    resize: none;
+    font-size: 16px;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #4b0082;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+button {
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background: #4b0082;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #360061;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 12px;
+}
+
+.result h2 {
+    color: #4b0082;
+    margin-bottom: 10px;
+}
+
+#output {
+    color: #333;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+.stats {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.stats div {
+    flex: 1;
+    background: #f3eaff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.stats h3 {
+    color: #4b0082;
+    font-size: 24px;
+}
+
+.stats p {
+    color: #555;
+    margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+}

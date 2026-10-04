@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Case Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Text Case Analyzer</h1>
+        <p class="subtitle">Convert and analyze your text format</p>
+
+        <textarea id="textInput"
+            placeholder="Enter your text here..."></textarea>
+
+        <div class="buttons">
+            <button onclick="convertText('upper')">UPPERCASE</button>
+            <button onclick="convertText('lower')">lowercase</button>
+            <button onclick="convertText('title')">Title Case</button>
+            <button onclick="convertText('sentence')">Sentence Case</button>
+        </div>
+
+        <div class="result">
+            <h2>Converted Text</h2>
+            <p id="output">Your converted text will appear here...</p>
+        </div>
+
+        <div class="stats">
+            <div>
+                <h3 id="words">0</h3>
+                <p>Words</p>
+            </div>
+
+            <div>
+                <h3 id="characters">0</h3>
+                <p>Characters</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
